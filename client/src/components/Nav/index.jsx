@@ -8,7 +8,7 @@ function Nav() {
       return (
         <ul className="flex-row">
           <li className="mx-1">
-            placeholder
+            Dashboard placeholder
           </li>
           <li className="mx-1">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
@@ -38,10 +38,9 @@ function Nav() {
 
   return (
     <header className="">
-      <h1>
-        HEADER PLACEHOLDER
+      <h1>        
         <Link to="/">
-            <h1>Placeholder</h1>
+        HEADER PLACEHOLDER
         </Link>
       </h1>
 

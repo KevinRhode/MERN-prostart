@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 const router = createBrowserRouter([
   {
@@ -16,13 +18,16 @@ const router = createBrowserRouter([
         index: true, 
         element: <Home />,
       }, 
-    //   {
-    //     path: '/login',
-    //     element: <Login />
-    //   }, {
-    //     path: '/signup',
-    //     element: <Signup />
-    //   }, {
+      {
+        path: '/login',
+        element: <Login />,
+        errorElement: <NoMatch />
+      }, {
+        path: '/signup',
+        element: <Signup />,
+        errorElement: <NoMatch />
+      },
+      //  {
     //     path: '/success',
     //     element: <Success />
     //   }, {
